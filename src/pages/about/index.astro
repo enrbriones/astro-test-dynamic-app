@@ -1,26 +1,22 @@
 ---
-import { Counter } from "../components/Counter";
+import { Counter } from "../../components/Counter";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>About</title>
   </head>
   <body>
-    <h1>Astro</h1>
-    <a href="/about" class="m-2 text-blue-600 hover:text-blue-500 underline"
-      >About</a
-    >
-
+    <h1>About</h1>
+    <a href="/" class="m-2 text-blue-600 hover:text-blue-500 underline">Home</a>
     <Counter
-      client:visible
       transition:persist="counter"
       transition:persist-props
-      initValue={10}
+      client:visible
+      initValue={55}
     />
   </body>
 </html>
